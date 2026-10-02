@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GATE ECE 2027 · Mission Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="hero">
+    <blockquote id="quote"></blockquote>
+    <div class="who" id="who"></div>
+    <p class="mission" id="mission"></p>
+    <button class="ghost" id="another">Show another</button>
+  </header>
+
+  <section class="stats" id="stats"></section>
+
+  <div class="two">
+    <section class="panel"><h2>Phases</h2><div id="phases"></div></section>
+    <section class="panel"><h2>Subjects</h2><div id="subjects"></div></section>
+  </div>
+
+  <section class="panel">
+    <div class="head"><h2>All 60 blocks</h2><div class="filters" id="filters"></div></div>
+    <div id="blocks"></div>
+  </section>
+
+  <footer>Progress is saved in this browser. <button class="ghost" id="reset">Reset progress</button></footer>
+</main>
+<div id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
